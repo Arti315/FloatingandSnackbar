@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/show"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter_UserName"
+        android:layout_marginTop="50dp"
+        android:inputType="text">
+
+    </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/show1"
+        android:layout_below="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter_Password"
+        android:layout_marginTop="10dp"
+
+
+        app:passwordToggleEnabled="true"
+
+        >
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter_Password"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+
+       ></com.google.android.material.textfield.TextInputEditText
+        >
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/aa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/show1"
+        android:text="Sumbit"
+
+        >
+
+    </Button>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addRecordBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_action_name"
+        android:layout_marginTop="100dp"
+        />
+
+</RelativeLayout>
